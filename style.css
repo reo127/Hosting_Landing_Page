@@ -25,6 +25,10 @@
     cursor: pointer;
 }
 
+section {
+    padding: 5rem 6rem;
+}
+
 
 
 
@@ -90,25 +94,57 @@ all: unset;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0rem 6rem;
     font-family: 'Open Sans', sans-serif;
     flex-wrap: wrap;
-    height: 80vh;
 }
 
-.heroa_one_lift > h1{
-    font-size: 5rem;
-    width: 45vw;
-    height: 35vh;
-    line-height: 6rem;
+.heroa_one_lift {
+    max-width: 48rem;
 }
 
-.heroa_one_lift > p {
-    width: 40rem;
+.hero_one_lift > h1{
+    font-size: clamp(1rem, 10vw, 5rem);
+    color: #333;
+    max-width: 48rem;
+
+}
+
+.hero_one_lift > p {
+    max-width: 40rem;
     font-size: 1.3rem;
     color: #555;
+    margin-top: 3rem;
 }
 
 .hero_one > img {
     width: 45rem;
+}
+
+
+/* =========================================== */
+/* ===================== Hero Two ====================== */
+/* =========================================== */
+
+.hero_two {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+    flex-wrap: wrap;
+}
+
+.hero_two > img {
+    width: 45rem;
+}
+
+.hero_two > .hero_two_right > h1 {
+    font-size: clamp(1rem, 10vw, 5rem);
+    color: #333;
+}
+
+.hero_two > .hero_two_right > p {
+    /* max-width: 40rem; */
+    font-size: 1.3rem;
+    color: #555;
+    margin-top: 3rem;
 }
