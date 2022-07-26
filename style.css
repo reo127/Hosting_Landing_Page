@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* =========================================== */
+/* ===================== Navber ====================== */
+/* =========================================== */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+    padding: 2rem 6rem;
+}
+
+.nav_items {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav_item {
+    padding: 1rem 2rem;
+}
+
+.action {
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
+.nav_item > a {
+all: unset;
+}
+
+.register_btn {
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(55deg, #3b80e7, #0f118b) 1;
+    
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border-radius: 30px;
+}
+
+#register_ancher{
+    background-image: linear-gradient(179deg, #3b80e7, #0f118b);
+    font-weight: 700;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+
+
+}
+
+
