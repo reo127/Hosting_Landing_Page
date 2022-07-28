@@ -103,6 +103,9 @@ section {
     flex-wrap: wrap;
 }
 
+.my_2 {
+    margin-top: 2rem;
+}
 
 
 
@@ -480,4 +483,32 @@ nav {
     padding: 1rem 3rem;
     border-radius: 10px;
     font-weight: 700;
+}
+
+
+
+/* =========================================== */
+/* ===================== Footer Section ====================== */
+/* =========================================== */
+
+.f-col {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logo_section > p {
+    max-width: 26rem;
+    line-height: 2rem;
+    font-size: clamp(.8rem , 2vw, 1.5rem);
+}
+
+.footer {
+
+}
+
+.menu_section > a, .links_sectio > a, .overvie > a {
+    all: unset;
+    color: #333;
+    margin-top: 2rem;
 }
