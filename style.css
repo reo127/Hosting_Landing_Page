@@ -14,19 +14,42 @@
 /* =========================================== */
 
 
-.btnc{
+.btnc {
     all: unset;
-    background: linear-gradient(163deg, rgba(68,137,238,1) 37%, rgba(47,49,167,1) 100%);
+    background: linear-gradient(163deg, rgba(68, 137, 238, 1) 37%, rgba(47, 49, 167, 1) 100%);
     color: #fff;
     font-weight: 700;
     padding: 1rem 3rem;
     border-radius: 11px;
     font-size: 1.3rem;
     cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn {
+    all: unset;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(55deg, #3b80e7, #0f118b) 1;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border-radius: 30px;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(179deg, #3b80e7, #0f118b);
+    font-weight: 700;
+    font-size: 1.3rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 section {
     padding: 5rem 6rem;
+}
+
+.tc {
+    text-align: center;
 }
 
 
@@ -60,24 +83,23 @@ nav {
 }
 
 .nav_item > a {
-all: unset;
+    all: unset;
 }
 
 .register_btn {
     border-width: 2px;
     border-style: solid;
     border-image: linear-gradient(55deg, #3b80e7, #0f118b) 1;
-    
     background-origin: border-box;
     background-clip: content-box, border-box;
     border-radius: 30px;
 }
 
-#register_ancher{
+#register_ancher {
     background-image: linear-gradient(179deg, #3b80e7, #0f118b);
     font-weight: 700;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
 }
 
 
@@ -102,21 +124,21 @@ all: unset;
     max-width: 48rem;
 }
 
-.hero_one_lift > h1{
+.hero_one_lift>h1 {
     font-size: clamp(1rem, 10vw, 5rem);
     color: #333;
     max-width: 48rem;
 
 }
 
-.hero_one_lift > p {
+.hero_one_lift>p {
     max-width: 40rem;
     font-size: 1.3rem;
     color: #555;
     margin-top: 3rem;
 }
 
-.hero_one > img {
+.hero_one>img {
     width: 45rem;
 }
 
@@ -133,18 +155,176 @@ all: unset;
     flex-wrap: wrap;
 }
 
-.hero_two > img {
+.hero_two>img {
     width: 45rem;
 }
 
-.hero_two > .hero_two_right > h1 {
+.hero_two>.hero_two_right>h1 {
     font-size: clamp(1rem, 10vw, 5rem);
     color: #333;
 }
 
-.hero_two > .hero_two_right > p {
+.hero_two>.hero_two_right>p {
     /* max-width: 40rem; */
     font-size: 1.3rem;
     color: #555;
     margin-top: 3rem;
+    max-width: 48rem;
+}
+
+
+/* =========================================== */
+/* ===================== Hero Three ====================== */
+/* =========================================== */
+
+
+.hero_three {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+    flex-wrap: wrap;
+}
+
+.hero_three_left>h1 {
+    font-size: clamp(1rem, 10vw, 5rem);
+    color: #333;
+}
+
+.hero_three_left>p {
+    font-size: 1.3rem;
+    color: #555;
+    margin-top: 3rem;
+    max-width: 48rem;
+}
+
+.hero_three>img {
+    width: 45rem;
+}
+
+
+/* =========================================== */
+/* ===================== Service Section ====================== */
+/* =========================================== */
+
+.services {}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.top>h1 {
+    font-family: 'Open Sans';
+    font-size: 3.5rem;
+
+}
+
+.top>p {
+    font-family: 'Open Sans';
+    font-size: 1.5rem;
+    max-width: 50rem;
+    color: #333;
+}
+
+.bottom {
+    padding: 4rem 0rem;
+}
+
+
+.gride_items {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    font-family: 'Open Sans';
+}
+
+.gride_item {
+    padding: 2rem;
+}
+
+.gride_item>h2 {
+    font-size: 2rem;
+    color: #333;
+    padding: 1.2rem 0;
+}
+
+.gride_item>p {
+    font-size: 1.3rem;
+    color: #333;
+}
+
+
+
+/* =========================================== */
+/* ===================== Pricing Section ====================== */
+/* =========================================== */
+
+.pricing {
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(179deg, #3b80e7, #0f118b);
+}
+
+.pricing>h1 {
+    color: #fff;
+    text-align: center;
+    font-size: clamp(1rem, 8vw, 3.5rem);
+    margin-bottom: 4rem;
+}
+
+.pricing_packges {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pricing_packge {
+    padding: 2rem 3rem;
+    background: #fff;
+    border-radius: 1rem;
+}
+
+.pricing_packge > h2 {
+    font-size: 2rem;
+    margin: 1rem 0rem;
+    color: #333;
+}
+
+.amount {
+    margin: 2rem 0rem;
+}
+
+.amount > p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.amount > h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0rem;
+}
+
+.amount > h1 > span {
+
+}
+
+.pricing_packge > ul {
+
+}
+
+.pricing_packge > ul > li {
+    font-size: 1.3rem;
+    color: #333;
+    margin: 2rem 0rem;
+}
+
+.icon_style {
+    color: #008000;
+    margin-right: 2rem;
+}
+
+.btn_price_margin {
+    margin: 1rem 4rem;
 }
