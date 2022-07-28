@@ -52,6 +52,58 @@ section {
     text-align: center;
 }
 
+.item_center {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg_black {
+    background: #333;
+}
+
+.tx_b {
+    color: #333;
+}
+
+.tx_w {
+    color: #fff;
+}
+
+.tx_g{
+    color: #555;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.f3 {
+    font-size: clamp(1rem, 6vw, 3rem);
+}
+
+.f {
+    display: flex;
+}
+
+.ac{
+    align-items: center;
+}
+
+.jc {
+    justify-content: center;
+}
+
+.js{ 
+    justify-content: space-between;
+}
+
+.f_w {
+    flex-wrap: wrap;
+}
+
+
 
 
 
@@ -209,20 +261,20 @@ nav {
 
 .services {}
 
-.top {
+.services > .top {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.top>h1 {
+.services > .top>h1 {
     font-family: 'Open Sans';
     font-size: 3.5rem;
 
 }
 
-.top>p {
+.services > .top>p {
     font-family: 'Open Sans';
     font-size: 1.5rem;
     max-width: 50rem;
@@ -280,15 +332,18 @@ nav {
 }
 
 .pricing_packge {
-    padding: 2rem 3rem;
     background: #fff;
     border-radius: 1rem;
 }
 
 .pricing_packge > h2 {
-    font-size: 2rem;
+    font-size: clamp(1rem, 3vw, 2rem);
     margin: 1rem 0rem;
     color: #333;
+}
+
+.pricing_packge > p {
+    color: #555;
 }
 
 .amount {
@@ -307,11 +362,11 @@ nav {
 }
 
 .amount > h1 > span {
-
+    color: #888;
 }
 
 .pricing_packge > ul {
-
+    padding: 2rem 3rem;
 }
 
 .pricing_packge > ul > li {
@@ -327,4 +382,102 @@ nav {
 
 .btn_price_margin {
     margin: 1rem 4rem;
+}
+
+.headings {
+    padding: 2rem 2rem;
+    border-radius: 12px;
+}
+
+.headings > h2 {
+    font-size: clamp(1rem, 3vw, 2.5rem);
+    margin: 1rem 0rem;
+}
+
+
+
+/* =========================================== */
+/* ===================== Customer Section ====================== */
+/* =========================================== */
+
+
+.customer {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(166deg, rgba(255,255,255,1) 37%, rgba(255,248,248,1) 100%);
+}
+
+.customer > .top > h1 {
+    font-size: clamp(1rem, 3vw, 4rem);
+}
+
+.customer > .top > p {
+    max-width: 68rem;
+    margin: auto;
+    margin-top: 2rem;
+    font-size: clamp(.8rem, 1.5vw, 1.4rem);
+}
+
+
+.customer_cards{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 2px;
+}
+
+.customer_card {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 2px #000;
+    max-width: 41rem;
+    margin-top: 5rem;
+    border-radius: 10px;
+    margin-right: 1rem;
+    /* min-width: 18rem; */
+}
+
+.customer_card > p {
+    max-width: 38rem;
+    margin: 1rem 0rem;
+    line-height: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.customer_info {
+    margin: 1rem 0rem;
+}
+
+.customer_data {
+    margin-left: 2rem;
+    line-height: 2rem;
+}
+
+/* =========================================== */
+/* ===================== Register Section ====================== */
+/* =========================================== */
+
+.register {
+    background: linear-gradient(139deg, #3b80e7, #0f118b);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.register_left {
+    max-width: 45rem;
+}
+
+.register_left > h1 {
+    font-size: clamp(.8rem, 4vw, 4rem);
+}
+
+.register_left > p {
+    margin-top: 3rem;
+}
+
+.register_now_btn {
+    all: unset;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 1.3rem;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    font-weight: 700;
 }
