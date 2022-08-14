@@ -71,7 +71,7 @@ section {
     color: #fff;
 }
 
-.tx_g{
+.tx_g {
     color: #555;
 }
 
@@ -87,7 +87,7 @@ section {
     display: flex;
 }
 
-.ac{
+.ac {
     align-items: center;
 }
 
@@ -95,7 +95,7 @@ section {
     justify-content: center;
 }
 
-.js{ 
+.js {
     justify-content: space-between;
 }
 
@@ -117,9 +117,14 @@ section {
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     font-family: 'Open Sans', sans-serif;
     padding: 2rem 6rem;
+}
+
+nav>img {
+    position: absolute;
+    left: 4rem;
 }
 
 .nav_items {
@@ -137,7 +142,7 @@ nav {
     font-size: 1.1rem;
 }
 
-.nav_item > a {
+.nav_item>a {
     all: unset;
 }
 
@@ -158,6 +163,35 @@ nav {
 }
 
 
+@media screen and (max-width: 1174px) {
+    nav {
+        padding: 2rem 1rem;
+    }
+
+    nav>img {
+        left: 1rem;
+    }
+}
+
+@media screen and (max-width: 1036px) {
+    .nav_items {
+        position: absolute;
+        top: 7rem;
+        left: 12%;
+    }
+
+    .nav_item {
+        padding: 0.2rem 0.5rem;
+    }
+
+    .nav_item>a {
+        font-size: .7rem;
+    }
+
+
+}
+
+
 /* =========================================== */
 /* ===================== Hero One ====================== */
 /* =========================================== */
@@ -172,7 +206,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     font-family: 'Open Sans', sans-serif;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
 }
 
 .heroa_one_lift {
@@ -195,6 +229,12 @@ nav {
 
 .hero_one>img {
     width: 45rem;
+}
+
+@media screen and (max-width:650px) {
+    section{
+        padding: 5rem 1rem;
+    }
 }
 
 
@@ -264,22 +304,22 @@ nav {
 
 .services {}
 
-.services > .top {
+.services>.top {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.services > .top>h1 {
+.services>.top>h1 {
     font-family: 'Open Sans';
-    font-size: 3.5rem;
+    font-size: clamp(1rem, 10vw, 5rem)
 
 }
 
-.services > .top>p {
+.services>.top>p {
     font-family: 'Open Sans';
-    font-size: 1.5rem;
+    font-size: clamp(.8rem, 3vw, 1.5rem);
     max-width: 50rem;
     color: #333;
 }
@@ -310,6 +350,18 @@ nav {
     color: #333;
 }
 
+@media screen and (max-width: 830px) {
+    .gride_items{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .gride_items{
+        grid-template-columns: auto;
+    }
+}
+
 
 
 /* =========================================== */
@@ -332,20 +384,22 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .pricing_packge {
     background: #fff;
     border-radius: 1rem;
+    margin-top: 1rem;
 }
 
-.pricing_packge > h2 {
+.pricing_packge>h2 {
     font-size: clamp(1rem, 3vw, 2rem);
     margin: 1rem 0rem;
     color: #333;
 }
 
-.pricing_packge > p {
+.pricing_packge>p {
     color: #555;
 }
 
@@ -353,26 +407,26 @@ nav {
     margin: 2rem 0rem;
 }
 
-.amount > p {
+.amount>p {
     font-size: 1.2rem;
     color: #555;
 }
 
-.amount > h1 {
+.amount>h1 {
     font-size: 2rem;
     text-align: center;
     margin: 1rem 0rem;
 }
 
-.amount > h1 > span {
+.amount>h1>span {
     color: #888;
 }
 
-.pricing_packge > ul {
+.pricing_packge>ul {
     padding: 2rem 3rem;
 }
 
-.pricing_packge > ul > li {
+.pricing_packge>ul>li {
     font-size: 1.3rem;
     color: #333;
     margin: 2rem 0rem;
@@ -392,11 +446,32 @@ nav {
     border-radius: 12px;
 }
 
-.headings > h2 {
+.headings>h2 {
     font-size: clamp(1rem, 3vw, 2.5rem);
     margin: 1rem 0rem;
 }
 
+
+@media screen and (max-width: 430px) {
+    .pricing_packge{
+        margin: auto;
+        margin-top: 1rem;
+    }
+    .pricing_packge>ul {
+        padding: 0rem 2rem;
+    }
+    
+    .pricing_packge>ul>li {
+        font-size: 1rem;
+        margin: 1.5rem 0rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .pricing_packges{
+        justify-content: center;
+    }
+}
 
 
 /* =========================================== */
@@ -406,14 +481,14 @@ nav {
 
 .customer {
     font-family: 'Open Sans', sans-serif;
-    background: linear-gradient(166deg, rgba(255,255,255,1) 37%, rgba(255,248,248,1) 100%);
+    background: linear-gradient(166deg, rgba(255, 255, 255, 1) 37%, rgba(255, 248, 248, 1) 100%);
 }
 
-.customer > .top > h1 {
+.customer>.top>h1 {
     font-size: clamp(1rem, 3vw, 4rem);
 }
 
-.customer > .top > p {
+.customer>.top>p {
     max-width: 68rem;
     margin: auto;
     margin-top: 2rem;
@@ -421,7 +496,7 @@ nav {
 }
 
 
-.customer_cards{
+.customer_cards {
     display: grid;
     grid-template-columns: auto auto;
     padding: 2px;
@@ -438,7 +513,7 @@ nav {
     /* min-width: 18rem; */
 }
 
-.customer_card > p {
+.customer_card>p {
     max-width: 38rem;
     margin: 1rem 0rem;
     line-height: 1.5rem;
@@ -454,6 +529,17 @@ nav {
     line-height: 2rem;
 }
 
+@media screen and (max-width:650px) {
+    .customer_cards {
+        grid-template-columns: auto;
+    }
+
+    .customer_card{
+        margin-top: 2rem;
+    }
+}
+
+
 /* =========================================== */
 /* ===================== Register Section ====================== */
 /* =========================================== */
@@ -467,11 +553,11 @@ nav {
     max-width: 45rem;
 }
 
-.register_left > h1 {
+.register_left>h1 {
     font-size: clamp(.8rem, 4vw, 4rem);
 }
 
-.register_left > p {
+.register_left>p {
     margin-top: 3rem;
 }
 
@@ -485,6 +571,37 @@ nav {
     font-weight: 700;
 }
 
+@media screen and (max-width:650px) {
+    .register {
+        text-align: center;
+    }
+
+    .register_now_btn {
+        font-size: 1rem;
+        padding: .8rem 2rem;
+        margin: auto;
+        margin-top: 2rem;
+    }
+
+    .footer {
+        font-family: 'Open Sans', sans-serif;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo_section>p {
+        line-height: 1.3rem;
+        margin: 1rem 0rem;
+    }
+
+    .f-col {
+        margin-bottom: 3rem;
+    }
+
+    .menu_section>a, .links_sectio>a, .overvie>a {
+        margin-top: 1rem !important;
+    }
+}
 
 
 /* =========================================== */
@@ -497,18 +614,32 @@ nav {
     font-family: 'Open Sans', sans-serif;
 }
 
-.logo_section > p {
+.logo_section>p {
     max-width: 26rem;
     line-height: 2rem;
-    font-size: clamp(.8rem , 2vw, 1.5rem);
+    font-size: clamp(.8rem, 2vw, 1.5rem);
 }
 
 .footer {
     font-family: 'Open Sans', sans-serif;
 }
 
-.menu_section > a, .links_sectio > a, .overvie > a {
+.menu_section>a,
+.links_sectio>a,
+.overvie>a {
     all: unset;
     color: #333;
     margin-top: 2rem;
+}
+
+
+
+/* =========================================== */
+/* ===================== Making responsive ====================== */
+/* =========================================== */
+
+@media screen and (max-width:650px) {
+    section{
+        padding: 5rem 1rem;
+    }
 }
